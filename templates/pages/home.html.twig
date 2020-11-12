@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'Boutique ElleRebelle ' %}
+{% block body %}
+    <div class="jumbotron text-center">
+        <h2 style="serif">Bienvenue</h2>
+        <p>
+            Vous etes pationne par la mode? Veuillez visiter notre site :)
+        </p>
+    </div>
+    {% for message in app.flashes('success') %}
+        <div class="alert alert-success col-md-4">
+            {{ message }}
+        </div>
+    {% endfor %}
+    <div class="container text-center">
+        <img src="image/robe/r5.jpg">
+    </div>
+{% endblock %}

@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    font-size: 16px;
+    font-family: "Montserrat",sans-serif;
+    color: rgba(0, 0, 0, 0.87);
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 500;
+    background: #fbfbfb;
+}
+.avatar {
+    max-width: 128px;
+    max-height: 128px;
+    border-radius: 50%;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.avatar-medium {
+    max-width: 110px;
+    max-height: 110px;
+    border-radius: 60px;
+}
+
+.search {
+    height: 42px;
+}
+
+.avatar-mini {
+    max-width: 45px;
+    max-height: 45px;
+    border-radius: 40px;
+}
+
+.avatar-header {
+    max-width: 35px;
+    min-width: 35px;
+    border-radius: 25px;
+}
+
+
+.alert a {
+    text-decoration: none;
+}
+
+.bg-coffee {
+    background-color: #000;
+}
+
+.card {
+    display: flex;
+    margin-top:7%;
+    justify-content: center;
+    margin: auto;
+    transition: .5s;
+    animation: slideDown 5s;
+}
+footer{
+    background: lightgrey;
+    height: 200px;
+    color: blue;
+}
+footer hr{
+    border: none;
+    background: #c4c4c4;
+    height: 1px;
+    margin: 50px 0;
+}
+footer h4{
+    font-style: italic; 
+    text-align:center; 
+    color:blue;
+}
+footer ul{
+    list-style: none;
+    text-align: center;
+}
+footer ul li{
+    display: inline-block;
+    padding: 20px;
+}
+@keyframes slideDown{
+    0%{
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

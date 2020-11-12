@@ -1,0 +1,16 @@
+{{ form_start(form) }}
+    <div class="row">
+        <div class="col-3">{{ form_row(form.name) }}</div>
+    </div>
+    <div class="row">
+        <div class="col-3">{{ form_row(form.price) }}</div>
+    </div>
+    <div class="row">
+        <div class="col-3">{{ form_row(form.description) }}</div>
+    </div>
+    <div class="row">
+        <div class="col-3">{{ form_row(form.image) }}</div>
+    </div>    
+         {{ form_widget(form) }}
+         <button class="btn btn-primary">{{ button|default('Enregistrer')}}</button>
+{{ form_end(form) }}

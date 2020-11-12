@@ -1,0 +1,23 @@
+{% extends 'base.html.twig'%}
+{% block title product.name %}
+{% block body %}
+    <div class="container mt-4 align-center">
+        <div class="row">
+            <div class="col-md-8">
+                    <div class="card-body">
+                        <div class="col-md-6">
+                            <img src="{{ asset('images/' ~ product.image) }}" alt="card-img-top" style="width: 100%; height: 20%;">
+                        </div>
+                    </div>
+                    <div class="card-title">
+                        <h5>{{ product.name }}</h5>
+                    </div>
+                    <div>
+                        <p> {{ product.description }}</p>
+                        <div class="text-primary">{{ product.price | number_format( 0, '', ' ')}}</div>
+                        <a href="#" class="btn btn-danger">Acheter</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
